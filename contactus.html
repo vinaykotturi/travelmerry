@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Mercy - Cheap Flights Booking, Airline Tickets</title>
+    <link rel="stylesheet" href="/scss/style.css">
+   <link rel="shortcut icon" href="/images/favicon.ico">
+</head>
+<body>
+    <nav class="nav__section ">
+        <div class="nav__inner container flex">
+            <div class="nav__logo">
+                <a href="/index.html">
+                    <img src="/images/logo.png" alt="company logo">
+                </a>
+            </div>
+
+            <div class="nav__links" id="links">
+                <ul class="flex">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/index.html">FLIGHTS</a></li>
+                    <li><a href="/contactus.html">CONTACT US</a></li>
+                    <li><a href="#">MY BOOKINGS</a></li>
+                    <li class="box">
+                        <div class="phone-link">
+                            <p>Book online or Call (Toll free)</p>
+                            <a href="#">+1-844-66-3779</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div id="open">
+                <button class="ham__menu" id=" toggle" onclick="showmenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button> 
+            </div> 
+
+            <button class="close__btn" id="close" onclick="closeMenu()">
+                <!-- <i class="fas fa-times"></i> -->
+                <span class="top-span"></span>
+                <span class="bottom-span"></span>
+            </button> 
+        </div>
+    </nav>
+    <!-- contact us form -->
+    <section class="contact__banner">
+        <div class="banner__title container">
+            <h1>Contact Us</h1>
+            <p>If you can't find an answer or need to reach us, feel free to contact us.</p>
+        </div>
+    </section>
+
+    <section class="contactus__page">
+        <div class="contactus__inner container">
+            <div class="contactus__form grid-2">
+                <div class="customer-details">
+                    <h3>Customer support</h3>
+                    <p>Submit your questions or feedback using the form below</p>
+                    <div class="inner-form">
+                        <div class="name-form flex">
+                            <div class="name-input">
+                                <label for="name">Name <span>*</span></label>
+                                <div class="name-inner">
+                                    <input type="text" id="name" name="UserName" placeholder="Enter Name">
+                                </div>
+                            </div>
+
+                            <div class="subject-input">
+                                <label for="subject">Subject</label>
+                                <div class="name-inner">
+                                    <input type="text" id="subject" name="UserSubject" placeholder="Enter Name">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer-support">
+                    <h3>24/7 TravelMerry Support & Help</h3>
+                    <p>we are here to help</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- footer section -->
+    <section class="site__footer-links">
+        <div class="site__inner-footer container flex">
+            <div class="security flex">
+                <h2>Security</h2>
+                <div>
+                    <img src="/images/ARC-logo.png" alt="ARC logo">
+                    <img src="/images/ASTA-logo.png" alt="ASTA logo">
+                    
+                </div>
+                <img src="/images/secureTrust.png" alt="secure trust logo">
+                <img src="/images/cards.png" alt="visa master cards">
+            </div>
+            <div class="Quick-Links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">My Bookings</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="Quick-Links">
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h3>Corporate Address:</h3>
+                <p>Vyoma Travels Inc,</p>
+                <p>410 Peachtree Parkway,</p>
+                <p>BLDG 400, STE 4245, Cumming, GA 30041</p>
+                <p>United States of America.</p>
+                <div>
+                    <p><span>Tel:</span> +1-678-666-2853</p>
+                    <p><span>Email:</span> support@travelmerry.com</p>
+                    <p><span>Fax:</span> +1-678-669-2750</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-inner">
+        <p>Copyright © 2021 Vyoma Travels Inc - All Rights Reserved.</p>
+        <p>California: CST #2115700-50, Florida: ST39170, Iowa: SOT #1160 WA#603373092</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/26ed50e71b.js" crossorigin="anonymous"></script>
+    <script src="/js/interface.js"></script>
+</body>
+</html>

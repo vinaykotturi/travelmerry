@@ -1,0 +1,78 @@
+.how__section {
+    // background-color: lightblue;
+    text-align: center;
+    h1 {
+        margin-bottom: 1.875em;
+        font-size: 1.875em;
+        color: $shadeGraycolor;
+        font-weight: 400;
+    }
+    .container {
+        padding-top: 1.75em;
+        padding-bottom: 3.4375em;
+    }
+    .card-container {
+        .card {
+            .image-block {
+                margin-bottom: 1.5625em;
+            }
+            h3 {
+                color: $darkBluecolor;
+                font-size: 1.125em;
+                font-weight: 400;
+                margin-bottom: 1.125em;
+            }
+            p {
+                color: $lightBluecolor;
+                font-size: 0.9375em;
+            }
+
+            .image-one {
+                background-image: url('/images/iconSprite.png');
+                background-repeat: no-repeat;
+                background-position: -3% -7%;
+                width: 72px;
+                height: 72px;
+                transition: all 300ms ease-in-out;
+            }
+                .image-one:hover {
+                    background-position: -3% 105%;
+                }
+
+            .image-two {
+                background-image: url('/images/iconSprite.png');
+                background-repeat: no-repeat;
+                background-position: 32% -7%;
+                width: 72px;
+                height: 72px;
+                transition: all 300ms ease-in-out;
+            }
+                .image-two:hover {
+                    background-position: 32% 88%;
+                }
+            .image-three {
+                background-image: url('/images/iconSprite.png');
+                background-repeat: no-repeat;
+                background-position: 67% -7%;
+                width: 72px;
+                height: 72px;
+                transition: all 300ms ease-in-out;
+            }
+                .image-three:hover {
+                    background-position: 67% 100%;
+                }
+
+            .image-four {
+                background-image: url('/images/iconSprite.png');
+                background-repeat: no-repeat;
+                background-position: 100% -7%;
+                width: 72px;
+                height: 72px;
+                transition: all 300ms ease-in-out;
+            } 
+                .image-four:hover {
+                    background-position: 100% 102%;
+                }
+        }
+    }
+}

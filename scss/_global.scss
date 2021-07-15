@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $darkBluecolor;
+}
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 75em;
+    height: auto;
+    margin: auto;
+    padding: 0 0.3125em 0 0.3125em;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-wrap: wrap;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 10px;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25em;
+}
+.center-items {
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    background-color: $whiteColor;
+    padding: 16px 5px 16px 5px;
+    // border-radius: 3px;
+}
+.nav__section .ham-menu {
+    color: $graycolor;
+    font-size: 1.375em;
+}

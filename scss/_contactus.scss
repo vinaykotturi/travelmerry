@@ -1,0 +1,50 @@
+.contact__banner {
+    background-color: $dark-blue;
+    text-align: center;
+    color: $whiteColor;
+
+    background-image: url('/images/contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 56% 102%;
+
+    .banner__title {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 0.175em;
+            font-size: 1.8em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
+// customer form style
+
+.contactus__page {
+    background-color: $lightGrayColor;
+    .container {
+        padding: 15px;
+    }
+    .grid-2 {
+        grid-template-columns: 2fr 1fr;
+    }
+    .contactus__form {
+        background-color: lightblue;
+        .customer-details {
+            border-right: 1px solid blue;
+            padding: 20px;
+            .inner-form {
+                input[type="text"] {
+                    width: 100%;
+                }
+            }
+        }
+        .customer-support {
+            padding: 20px;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.contact__section {
+    width: 100%;
+    background-color: rgb(241, 250, 253);
+    background-image: url('/images/contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        padding-top: 3.3125em;
+        padding-bottom: 3.3125em;
+    }
+    .contact__inner.grid-2 {
+        gap: 1.875em;
+    }
+    .contact__inner {
+        // background-color: lightcoral;
+        .contact-card {
+            background-color: $whiteColor;
+            padding: 0.9375em;
+            border-radius: 0.3125em;
+            box-shadow: 0px 7px 7px rgba($color: #000000, $alpha: 0.2);
+        }
+        .title {
+            border-bottom: 1px solid $lightGrayColor;
+            margin-bottom: 0.9375em;
+            h3 {
+                padding-bottom: 0.4em;
+                font-size: 1.2em;
+                color: $dark-blue;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+        .contact__block-one {
+            .contact__info {
+                text-align: center;
+                p {
+                    font-size: 0.875em;
+                    color: $darkBluecolor;
+                    margin-bottom: 0.4em;
+                }
+                a {
+                    color: $shadeGraycolor;
+                }
+                .contact__image {
+                    width: 3em;
+                    height: 3em;
+                    
+                    margin-bottom: 1em;
+                }
+                .contact__card-one {
+                    padding: 0.3125em;
+                    border-right: 1px solid $lightGrayColor;
+                    a {
+                        font-size: 1.25em;
+                        font-weight: 700;
+                    }   
+                        a:hover {
+                            color: $bluecolor;
+                        }
+                    .con-img-one {
+                        background-image: url('/images/cusIcon.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+                .contact__card-two {
+                    padding: 0.3125em;
+                    a:hover {
+                        color: $bluecolor;
+                    }
+                    .con-img-two {
+                        background-image: url('/images/email-send.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+        .contact__block-two {
+            .flex {
+                justify-content: space-between;
+            }
+            
+            h3 {
+                padding-bottom: 0;
+            }
+           .contact__social {
+            .so-link {
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+            }
+            .facebook-link {
+                background-image: url('/images/facebook-off.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+                .facebook-link:hover {
+                    background-image: url('/images/facebook-on.png');
+                }
+            .twitter-link {
+                background-image: url('/images/twitter-off.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+                .twitter-link:hover {
+                    background-image: url('/images/twitter-on.png');
+                }
+           }
+           .contact__signup {
+            p {
+                font-size: 0.875em;
+                color: $darkBluecolor;
+                margin-bottom: 1.4em;
+            }
+               input[type="email"] {
+                   width: 66%;
+                   padding: 1.0625em 0.625em 1.0625em 2.9375em;
+                   border: 1px solid $darkGraycolor;
+                   outline: 0;
+                   border-radius: 0.3125em;
+                   font-size: 1.0625em;
+                   color: $shadeGraycolor;
+                   background-image: url('/images/email-icon.png');
+                   background-repeat: no-repeat;
+                   background-position: 6% 51%;
+               }
+               ::placeholder {
+                   font-size: 17px;
+               }
+               .signup-btn {
+                   display: inline-block;
+                   width: 100px;
+                   border: none;
+                   color: $whiteColor;
+                   font-weight: 600;
+                //    background-color: $greenBtnColor;
+                   background-image: linear-gradient(-180deg
+                    ,#00d775,#00bd68);
+                    cursor: pointer;
+                    padding: 1.0625em 1.0625em 1.0625em 1.0625em;
+                    border-radius: 5px;
+                    font-size: 1em;
+               }
+                .signup-btn:hover {
+                    background-image: linear-gradient(-180deg
+                    ,#00bd68,#00bd68);
+                }
+           }
+        }
+    }
+
+}   

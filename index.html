@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Mercy - Cheap Flights Booking, Airline Tickets</title>
+    <link rel="stylesheet" href="/scss/style.css">
+   <link rel="shortcut icon" href="/images/favicon.ico">
+</head>
+<body>
+    <nav class="nav__section ">
+        <div class="nav__inner container flex">
+            <div class="nav__logo">
+                <a href="/index.html">
+                    <img src="/images/logo.png" alt="company logo">
+                </a>
+            </div>
+
+            <div class="nav__links" id="links">
+                <ul class="flex">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/index.html">FLIGHTS</a></li>
+                    <li><a href="/contactus.html">CONTACT US</a></li>
+                    <li><a href="#">MY BOOKINGS</a></li>
+                    <li class="box">
+                        <div class="phone-link">
+                            <p>Book online or Call (Toll free)</p>
+                            <a href="#">+1-844-66-3779</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div id="open">
+                <button class="ham__menu" id=" toggle" onclick="showmenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button> 
+            </div> 
+
+            <button class="close__btn" id="close" onclick="closeMenu()">
+                <!-- <i class="fas fa-times"></i> -->
+                <span class="top-span"></span>
+                <span class="bottom-span"></span>
+            </button> 
+        </div>
+    </nav>
+
+    <!-- hero section markup -->
+    
+    <section class="hero__section" id = "hero">
+        <div class="hero__inner container">
+            <div class="hero__trip-maker">
+                <div class="hero__buttons grid-2">
+                        <a href="#" class="round-trip btn">
+                            round trip
+                        </a>
+                        <a href="#" class="one-way btn">
+                            one way
+                        </a>
+                </div>
+                
+                <div class="hero__flights grid-3">
+                    <div class="depature-input flex">
+                        <input type="text" name="depature" placeholder="Enter City Or Airport 1">
+                        <div class="flights-arrows"></div>
+                    </div>
+                    
+                    <div class="destination-input"> 
+                        <input type="text" name="destination" placeholder="Enter City Or Airport 2">
+                    </div>
+                </div>
+
+                <div class="hero__dates grid-3">
+                    <div class="depa-date">
+                        <input type="text" name="departure-date" placeholder="Departure">
+                    </div>
+                    <div class="arr-date">
+                        <input type="text" name="arrive-date" placeholder="Return">
+                    </div>
+                    <div class="traveller">
+                        <input type="text" name="persons" placeholder="1 Adult, Economy Class">
+                    </div>
+                </div>
+                <div class="hero__moreOptions flex">
+                    <div class="options">
+                        <p><i class="fas fa-plus-square"></i> Show More Option</p>
+                    </div>
+                    <div class="direc-flights">
+                        <input type="checkbox">
+                        <span>Direct flights Only</span>
+                    </div>
+                </div>
+                <div class="search-btn center-items">
+                    <input type="submit" name="search btn" value="Search Flights">
+                    <!-- <i class="fas fa-plane"></i> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- how works section -->
+    <section class="how__section">
+        <div class="how__inner container ">
+            <h1>How TravelMerry Works?</h1>
+            <div class="card-container grid-4">
+                <div class="card center-items">
+                    <div class="image-block image-one"></div>
+                    <h3>One Search</h3>
+                    <p>Compare all the airlines in one go. TravelMerry shows prices from all the major airlines in real time. Find the best deal faster.</p>
+                </div>
+                <div class="card center-items">
+                    <div class="image-block image-two"></div>
+                    <h3>No Hidden Charges</h3>
+                    <p>Prices include all taxes and fees. What you see is what you pay. No hidden charges.</p>
+                </div>
+                <div class="card center-items">
+                    <div class="image-block image-three"></div>
+                    <h3>100% Safe</h3>
+                    <p>Our website is safe and secure. SSL security encryption is used to make the bookings.</p>
+                </div>
+                <div class="card center-items">
+                    <div class="image-block image-four"></div>
+                    <h3>Free 24/7 assistance</h3>
+                    <p>Need a change to your ticket or refund? No problem, our 24/7 Customer Care is available free of charge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact__section">
+        <div class="contact__inner container grid-2">
+            <div class="contact__block-one contact-card ">
+                <div class="title">
+                    <h3>contact us</h3>
+                </div>
+                <div class="contact__info grid-2">
+                    <div class="contact__card-one center-items">
+                        <div class="contact__image con-img-one"></div>
+                        <div>
+                            <p>Book Online or Call</p>
+                            <a href="#">+1-678-666-2853</a>
+                        </div>
+                    </div>
+                    <div class="contact__card-two center-items">
+                        <div class="contact__image con-img-two"></div>
+                        <div>
+                            <p>Email us</p>
+                            <a href="#">support@travelmerry.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__block-two contact-card ">
+                <div class="title flex">
+                    <h3>connect with us</h3>
+                    <div class="contact__social">
+                        <a href="#">
+                        <div class="facebook-link so-link"></div></a>
+                        <a href="#">
+                            <div class="twitter-link so-link"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact__signup">
+                    <p>Sign up today and never miss another deal again!</p>
+                    <input type="email" name="signup" placeholder="Get TravelMerry Emails">
+                    <button type="button" class=" signup-btn" name="sing up">Sing Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- travelmercy iformation section -->
+    <section class="travel__info">
+        <div class="travel__inner container">
+            <div class="budget-flights">
+                <h2>Travel Merry Budget prices on Best flights - Just for you!</h2>
+                <p>Traveling is another name for self-exploration. It not only enriches your senses, but gives you an opportunity to grow and discover new horizons in life. The inner growth that you attain from traveling helps you get newer perspective in your daily life.</p>
+                <p>Traveling can be enjoyed in multiple ways. Whether you’re a solo flyer, a person with a big family or you like to travel with your friends on regular intervals, Travel Merry has a lot of options for everyone. We can send you to the moon and back (pun intended).</p>
+                <p>With our discounts and offers you can always make a trip without feeling like you’re being made to shell out too much money. Just let us know what it is you’re looking for and our customer service executive will personally guide you to curve out a travel plan just for you. We believe in empowering customers so that they can become true travelers.</p>
+                <h3>Getting the best lower-priced air travel tickets:</h3>
+                <p>International flight tickets generally don’t come cheap. Especially, if you don’t know what you are supposed to be looking for. So, here are some easy-to-apply tips for you to go on –</p>
+                <ul>
+                    <li>International flight tickets generally don’t come cheap. Especially, if you don’t know what you are supposed to be looking for. So, here are some easy-to-apply tips for you to go on –</li>
+                    <li>Keep a window of at least a week for the choice of date of your journey so that you can adjust according to the prices available</li>
+                    <li>Weekends flights are generally overpriced as people tend to travel intercity or even inter-country during the free time they have in the week to meet family or loved ones</li>
+                    <li>Look for budget airlines rather than premium carriers if you want to save more</li>
+                    <li>If you’re taking intercontinental flights which has a significant time difference compared to your country try to get an idea which is the cheap time of the day to fly as your morning can be evening in your destination of choice</li>
+                </ul>
+                <p>You can always get the best of offers and discounts if you keep a good time difference between the date of your booking your tickets and the date of journey. Also, try to avoid traveling in peak seasons to any place as your airfare and the overall holiday expense will rise to a significant amount. Every destination has its own high and low season but fall is generally a time when people travel more.</p>
+                <div class="flight-routes">
+                    <h3>Popular Flight Routes</h3>
+                    <div class="flex">
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/ewr/lhr/newark-to-london-flights-booking" target="_blank">Newark to London Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/iad/lhr/washington-to-london-flights-booking" target="_blank">Washington to London Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/jfk/mad/new-york-to-madrid-flights-booking" target="_blank">New York to Madrid Flights</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/lax/mad/los-angeles-to-madrid-flights-booking" target="_blank">Los Angeles to Madrid Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/lax/nrt/los-angeles-to-tokyo-flights-booking" target="_blank">Los Angeles to Tokyo Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/mia/mad/miami-to-madrid-flights-booking" target="_blank">Miami to Madrid Flights</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/ord/krk/chicago-to-krakow-flights-booking" target="_blank">Chicago to Krakow Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/ord/lhr/chicago-to-london-flights-booking" target="_blank">Chicago to London Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/jfk/bcn/new-york-to-barcelona-flights-booking" target="_blank">New York to Barcelona Flights</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/sfo/lhr/san-francisco-to-london-flights-booking" target="_blank">San Francisco to London Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/sfo/lhr/san-francisco-to-london-flights-booking" target="_blank">New York to Frankfurt Flights</a></li>
+                            <li><a href="https://www.travelmerry.com/cheap-flights/ord/sof/chicago-to-sofia-flights-booking" target="_blank">Chicago to Sofia Flights</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flight-routes">
+                    <h3>Popular Flight Routes</h3>
+                    <div class="flex">
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/airlines/turkey/turkish-airlines-online-booking" target="_blank">Turkish Airlines</a></li>
+                            <li><a href="https://www.travelmerry.com/airlines/united-states/united-airlines-online-booking" target="_blank">United Airlines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/airlines/norway/scandinavian-airlines-online-booking" target="_blank">Scandinavian Airlines</a></li>
+                            <li><a href="https://www.travelmerry.com/airlines/switzerland/swiss-online-booking" target="_blank">Swiss International Airlines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/airlines/spain/iberia-online-booking " target="_blank">
+                                Iberia Airlines
+                                </a></li>
+                            <li><a href="https://www.travelmerry.com/airlines/germany/lufthansa-online-booking" target="_blank">Lufthansa</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.travelmerry.com/airlines/austria/austrian-airline-online-booking" target="_blank"></a>Austrian Airlines</li>
+                            <li><a href="https://www.travelmerry.com/airlines/finland/finnair-online-booking" target="_blank">Finnair Airlines</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site__footer-links">
+        <div class="site__inner-footer container flex">
+            <div class="security flex">
+                <h2>Security</h2>
+                <div>
+                    <img src="/images/ARC-logo.png" alt="ARC logo">
+                    <img src="/images/ASTA-logo.png" alt="ASTA logo">
+                    
+                </div>
+                <img src="/images/secureTrust.png" alt="secure trust logo">
+                <img src="/images/cards.png" alt="visa master cards">
+            </div>
+            <div class="Quick-Links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">My Bookings</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="Quick-Links">
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h3>Corporate Address:</h3>
+                <p>Vyoma Travels Inc,</p>
+                <p>410 Peachtree Parkway,</p>
+                <p>BLDG 400, STE 4245, Cumming, GA 30041</p>
+                <p>United States of America.</p>
+                <div>
+                    <p><span>Tel:</span> +1-678-666-2853</p>
+                    <p><span>Email:</span> support@travelmerry.com</p>
+                    <p><span>Fax:</span> +1-678-669-2750</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-inner">
+        <p>Copyright © 2021 Vyoma Travels Inc - All Rights Reserved.</p>
+        <p>California: CST #2115700-50, Florida: ST39170, Iowa: SOT #1160 WA#603373092</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/26ed50e71b.js" crossorigin="anonymous"></script>
+    <script src="/js/interface.js"></script>
+</body>
+</html>

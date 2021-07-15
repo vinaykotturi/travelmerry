@@ -1,0 +1,201 @@
+//mobiles
+$smallMobileBreakpoint: 30.5625em; // at 489px breakpoint
+$smallBreakpoint: 36em; // 576px
+//laptops
+$belowMediumBreakpoint: 37.5em; //600px
+$mobileBreakpoint: 43.625em; //698px 
+$mediumBreakpoint: 48em; // 768px
+$abovemediumBreakpoint: 56.125em; // 898px
+//destops
+$largeBreakpoint: 62em; // 992px
+$aboveLargeBreakpoint: 64em; //1024px
+//large screens
+$extraLargeBreakpoint: 75em; //1200px
+
+@media (max-width: 87.5em) {
+    .nav__section{
+        #open {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $aboveLargeBreakpoint) {
+    .nav__section {
+        .nav__logo {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width: $abovemediumBreakpoint) {
+    .nav__section {
+        #open {
+            display: block;
+        }
+        .nav__links {
+            z-index: -1;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 2.5em;
+            .flex {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            li {
+                width: 100%;
+            }
+            ul li a{
+                padding: 0.5em 0 0.5em 0.5em;
+                width: 100%;
+            }
+            .phone-link{
+                border: none;
+                text-align: left;
+                padding: 0.5em 0 0.5em 0.625em;
+            }
+            
+        }
+    }
+    
+
+}
+@media (max-width: $largeBreakpoint) { // at 992px breakpoint
+    section.hero__section {
+        .hero__trip-maker {
+            width: 97%;
+            .hero__dates.grid-3 {
+                gap: 0.625em;
+            }
+
+            .search-btn {
+                input[type="submit"] {
+                    width: 100%;
+                    background-position: 4% 51%;
+                }
+            }
+        }
+
+    }
+    section.contact__section {
+        .contact__inner {
+
+            .contact__block-one {
+                grid-column: 1 / 3;
+            }
+            .contact__block-two {
+                grid-column: 1 / 3;
+                .contact__signup {
+                    input[type="email"] {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $mediumBreakpoint) {
+    section.hero__section {
+        .hero__trip-maker {
+            .hero__buttons, .hero__flights, .hero__dates {
+                margin-bottom: 0.625em;
+            }
+        }
+    }
+    section.how__section {
+        .card-container.grid-4 {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media (max-width: $mobileBreakpoint) { //698px
+    section.hero__section {
+        .hero__trip-maker {
+            .hero__dates.grid-3 {
+                grid-template-rows: 2fr;
+            }
+            .hero__dates {
+                // background-color: blue;
+
+                .depa-date {
+                    grid-column: 1 / 3;
+                }
+                .arr-date {
+                    grid-column: 3 /4;
+                }
+                .traveller {
+                    grid-column: 1 /-1;
+                }
+            }
+        }
+    }
+    .how__section {
+        display: none;
+    }
+}
+
+@media (max-width: $smallMobileBreakpoint){ //at 489px breakpoint
+    section.hero__section {
+        .hero__trip-maker {
+            .hero__buttons {
+                max-width: 100%;
+            }
+            .hero__flights.grid-3 {
+                grid-template-rows: 2fr;
+            }
+            .hero__flights {
+                .depature-input {
+                    grid-column: 1 / 3;
+                    margin-bottom: 0.625em;
+                    input[type='text'] {
+                        border-radius: 0.25em;
+                    }
+                }
+                .destination-input {
+                    margin-left: 0;
+                    grid-column: 1 / 4;
+                    input[type='text'] {
+                        border-radius: 0.25em;
+                    }
+                }
+                .flights-arrows {
+                    right: 0.125em;
+                    border: none;
+                }
+            }
+            .hero__dates {
+                .depa-date {
+                    grid-column: 1 / 4;
+                }
+                .arr-date {
+                    grid-column: 1 / 4;
+                }
+            }
+        }
+    }
+    section.contact__section {
+        .contact__inner {
+            .contact__info {
+                .contact__card-one {
+                    grid-column: 1 / 3;
+                }
+                .contact__card-two {
+                    grid-column: 1 / 3;
+                }
+            }
+            .contact__block-two {
+                .contact__signup {
+                    input[type="email"] {
+                        width: 100%;
+                        margin-bottom: 1em;
+                    }
+                    .signup-btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

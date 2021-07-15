@@ -1,0 +1,55 @@
+.travel__info {
+    border-bottom:1px solid $plusDarkGrayColor;
+    .container {
+        padding-top: 1.5625em;
+        padding-bottom: 1.875em;
+    }
+    .flex {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    h2 {
+        font-size: 1.25em;
+        color: $dark-blue;
+        margin-bottom: 1.3625em;
+    }
+    h3 {
+        font-size: 1.2em;
+        color: $shadeGraycolor;
+        margin-bottom: 1em;
+    }
+    p {
+        font-size: 0.8125em;
+        line-height: 1.4;
+        color: $shadeGraycolor;
+        margin-bottom: 1.25em;
+    }
+    ul {
+        font-size: 0.8125em;
+        line-height: 1.4;
+        color: $shadeGraycolor;
+        list-style-type: circle;
+    }
+    ul li {
+        margin-bottom: 1em;
+    }
+    .flight-routes {
+        h3 {
+            color: $dark-blue;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li a::before {
+            content: "\f072";
+            font-family: FontAwesome;
+            display: inline-block;
+            transform: rotate(1deg);
+            margin-right: 5px;
+            font-size: 10px;
+        }
+        li a:hover {
+            color: $dark-blue;
+        }
+    }
+}

@@ -1,0 +1,278 @@
+.hero__section {
+    background-color: lightblue;
+    .container {
+        padding: 28px 0 28px 0;
+    }
+    background-image: url('/images/backgroung-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 40%;
+    
+    .hero__trip-maker {
+        width: 78%;
+        margin: auto;
+
+        // round trip and one way buttons style.
+
+        .hero__buttons {
+            max-width: 330px;
+            text-align: center;
+            margin-bottom: 1.625em;
+            .round-trip {
+                border-right: 1px solid $dark-blue;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                position: relative;
+            }
+                // buttons arrow buttons style and transition.
+                //round-trip arrow transition.
+                .round-trip::before {
+                    position: absolute;
+                    content: ' ';
+                    left: 17px;
+                    background-image: url(/images/arrows.png);
+                    background-repeat: no-repeat;
+                    background-position: 1px 1px;
+                    width: 25px;
+                    height: 18px;
+                    transition: all 300ms ease-in-out;
+                }
+             .round-trip:hover::before {
+                background-position: 1px -18px;
+            } 
+
+                //one-way button style
+            .one-way {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                position: relative;
+                background-color: $lightGrayColor;
+                color: $darkGraycolor;
+                transition: all 300ms ease-in-out;
+            }
+                .one-way:hover {
+                    background-color: $whiteColor;
+                    color: $dark-blue;
+                }
+                //one-way arrows transition.
+                .one-way::before {
+                    position: absolute;
+                    content: ' ';
+                    left: 25px;
+                    background-image: url(/images/arrows.png);
+                    background-repeat: no-repeat;
+                    background-position: -26px 0px;
+                    width: 25px;
+                    height: 18px;
+                    transition: all 300ms ease-in-out;
+                }
+                .one-way:hover::before {
+                    background-position: -26px -19px;
+                }
+
+            .round-trip, .one-way {
+                padding-left: 25px;
+            }
+            a {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $dark-blue;
+            }
+        }
+        // depature and destinations input style.
+
+        .hero__flights {
+            margin-bottom: 1.5625em;
+            box-shadow: 2px 8px 7px rgba($color: #000000, $alpha: 0.2);
+            input[type="text"] {
+                padding: 0.875em 0.75em 0.875em 2.875em;
+                outline: 0;
+                border: 0.0625em solid $lightGrayColor;
+                font-size: 1em;
+                color: $plusDarkGrayColor;
+                cursor: pointer;
+                overflow: hidden;
+                box-sizing: border-box;
+                width: 100%;
+                transition: all 300ms ease-in-out;
+            }
+            
+            input[type="text"]:focus, input[type="text"]:hover {
+                border: 0.0625em solid $bluecolor;
+            }
+            ::placeholder {
+                color: $darkGraycolor;
+                font-size: 1em;
+            }
+            .depature-input {
+                position: relative;
+                input[type="text"] {
+                    border-top-left-radius: 0.25em;
+                    border-bottom-left-radius: 0.25em;
+                    background-image: url('/images/depart-off.png');
+                    background-repeat: no-repeat;
+                    background-position: 0.75em 0.8125em;
+                    transition: all 300ms ease-in-out;
+                }
+                input[type="text"]:focus{
+                    background-image: url('/images/depart-on.png');
+                }
+                
+            }
+            .destination-input{
+                margin-left: 30px;
+                input[type="text"] {
+                    border-top-right-radius: 0.25em;
+                    border-bottom-right-radius: 0.25em;
+                    background-image: url('/images/arrive-off.png');
+                    background-repeat: no-repeat;
+                    background-position: 0.75em 0.8125em;
+                    transition: all 300ms ease-in-out;
+                }
+                input[type="text"]:focus {
+                    background-image: url('/images/arrive-on.png');
+                }
+            }
+
+            //input arrows style and transition
+            .flights-arrows {
+                position: absolute;
+                top: 0;
+                right: -1.875em;
+                width: 1.875em;
+                height: 48px;
+                background-color: $whiteColor;
+                overflow: hidden;
+                border-right:1px solid $lightGrayColor;
+                border-left: 1px solid $lightGrayColor;
+            }
+            .flights-arrows::before {
+                content: ' ';
+                position: absolute;
+                top: 0.8125em;
+                right: 0.5625em;
+                // background-color: lightsalmon;
+                width: 0.8125em;
+                height: 0.5em;
+                background-image: url('/images/arrow-right.svg');
+                background-repeat: no-repeat;
+            }
+            .flights-arrows::after {
+                content: ' ';
+                position: absolute;
+                top: 1.3125em;
+                right: -2px;
+                width: 1.5625em;    
+                height: 0.5em;
+                background-image: url('/images/arrow-left.svg');
+                background-repeat: no-repeat;
+            }
+        }
+            .hero__flights.grid-3 {
+                grid-template-columns: 1fr  1fr;
+            }
+        //hero dates style ---------------------------
+        .hero__dates {
+            margin-bottom: 1.5625em;
+            
+            input[type="text"] {
+                padding: 0.875em 0.75em 0.875em 2.875em;
+                outline: 0;
+                border: 0.0625em solid $lightGrayColor;
+                font-size: 1em;
+                color: $plusDarkGrayColor;
+                cursor: pointer;
+                overflow: hidden;
+                box-sizing: border-box;
+                width: 100%;
+                transition: all 300ms ease-in-out;
+            }
+            
+            input[type="text"]:focus, input[type="text"]:hover {
+                border: 0.0625em solid $bluecolor;
+            }
+            ::placeholder {
+                color: $darkGraycolor;
+                font-size: 1em;
+            }
+
+            .depa-date {
+                box-shadow: 2px 8px 7px rgba($color: #000000, $alpha: 0.2);
+                input[type="text"] {
+                    border-radius: 0.25em;
+                    background-image: url('/images/deparute-date.png');
+                    background-repeat: no-repeat;
+                    background-position: 0.75em 0.8125em;
+                    transition: all 300ms ease-in-out;
+                }
+                input[type="text"]:focus {
+                    background-image: url('/images/reparture-on.png');
+                }
+            }
+            .arr-date {
+                box-shadow: 2px 8px 7px rgba($color: #000000, $alpha: 0.2);
+                input[type="text"] {
+                    border-radius: 0.25em;
+                    background-image: url('/images/arrive-date.png');
+                    background-repeat: no-repeat;
+                    background-position: 0.75em 0.8125em;
+                    transition: all 300ms ease-in-out;
+                }
+                input[type="text"]:focus {
+                    background-image: url('/images/return-on.png');
+                }
+            }
+            .traveller {
+                box-shadow: 2px 8px 7px rgba($color: #000000, $alpha: 0.2);
+                input[type="text"] {
+                    width: 100%;
+                    border-radius: 0.25em;
+                    background-image: url('/images/passengers.png');
+                    background-repeat: no-repeat;
+                    background-position: 0.75em 0.8125em;
+                    transition: all 300ms ease-in-out;
+                }
+                
+            }
+        }
+        .hero__dates.grid-3 {
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 2.5em;
+        }
+        // more options style ---------------
+        .hero__moreOptions {
+            color: $whiteColor;
+            margin-bottom: 1.5625em;
+            .options {
+                cursor: pointer;
+                margin-right: 30px;
+            }
+            .direc-flights {
+                cursor: pointer;
+            }
+
+        }
+        .hero__moreOptions.flex {
+            justify-content: flex-start;
+        }
+        // Search button style-----------------
+
+        .search-btn {
+            input[type="submit"] {
+                background-color: $greenBtnColor;
+                background-image: linear-gradient(-180deg,#00d775,#00bd68);
+                font-size: 1.25em;
+                color: $whiteColor;
+                font-weight: 600;
+                cursor: pointer;
+                width: 30%;
+                height: 60px;
+                border-radius: 0.25em;
+                outline: 0;
+                border: none;
+                position: relative;
+            }
+        }
+    }
+}

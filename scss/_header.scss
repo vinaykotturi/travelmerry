@@ -1,0 +1,90 @@
+.nav__section {
+    border-bottom: 1px solid lightgray;
+    #open {
+        display: none;
+    }
+    .ham__menu {
+        background-color: transparent;
+        cursor: pointer;
+        width: 2.1875em;
+        height: 1.875em;
+        border: none;
+        span {
+            display: block;
+            width: 2em;
+            height: 0.25em;
+            background-color: $graycolor;
+            margin-bottom: 0.3125em;
+        }
+    }
+
+    .close__btn {
+        display: none;
+        background-color: transparent;
+        cursor: pointer;
+        width: 2.1875em;
+        height: 1.875em;
+        border: none;
+        position: relative;
+        span {
+            display: block;
+            width: 2em;
+            height: 0.25em;
+            background-color: $graycolor;
+            margin-bottom: 0.3125em;
+        }
+            .top-span {
+                position: absolute;
+                transform: rotate(45deg);
+            }
+            .bottom-span {
+                position: absolute;
+                transform: rotate(-45deg);
+            }
+       
+    }
+    
+    .nav__links {
+        li a {
+            display: inline-block;
+            font-size: 0.875em;
+            color: $graycolor;
+            font-weight: 600;
+            padding: 1.875em 0.625em 1.875em 0.625em;  
+        }
+            li a:hover:not(:nth-child(2)){
+                background-color: $lightGrayColor;
+                color: $bluecolor;
+            }
+            
+        .phone-link {
+            border-right: 1px solid $lightGrayColor;
+            border-left: 1px solid $lightGrayColor;
+            padding: 1.0625em 0.875em 1.0625em 0.875em;
+            text-align: center;
+            p {
+                font-size: 0.75em;
+                color: $graycolor;
+                margin-bottom: 0.3125em;
+            }
+            a{
+                padding: 0;
+                font-size: 1.25em;
+                color: $redColor;
+            }
+            
+        }
+            .phone-link:hover {
+                background-color: $lightGrayColor;
+                a {
+                    color: $bluecolor;
+                }
+            }
+        
+    }
+}
+.nav__section .flex {
+    justify-content: space-between;
+    
+}
+ 
